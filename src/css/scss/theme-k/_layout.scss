@@ -49,6 +49,14 @@ this template is provided as-is
 	letter-spacing: -1px;
 }
 
+h3, .h3 {
+	font-size: 130%;
+	letter-spacing: -1px;
+	line-height: 100%;
+	margin: 0;
+	padding: 5px 0 0 0;
+}
+
 .subline {
 	font-size: 140%;
 	letter-spacing: -1px;
@@ -167,4 +175,17 @@ this template is provided as-is
 hr,
 .hr {
 	border-bottom: 1px dotted $color-text;
+}
+
+.text-center {
+	text-align: center;
+}
+
+.display-block {
+	display: block;
+}
+
+// does not render in all email clients, use <b> instead
+.bold {
+	font-weight: bold;
 }
