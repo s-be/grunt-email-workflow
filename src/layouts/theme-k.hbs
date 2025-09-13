@@ -76,15 +76,33 @@
             </tr>
           </table>
           {{#if content.tickets.url}}
-            <table border="0" class="container max-width" width="100%">
-              <tr>
-                <td class="tickets font-family font-size line-height center pb-2">
-                  <a class="button color-primary border-primary uppercase bold" href="{{content.tickets.url}}" target="_blank">
-                    {{content.tickets.title}}
-                  </a>
-                </td>
-              </tr>
-            </table>
+          <table border="0" class="container max-width" width="100%">
+            <tr>
+              <td class="tickets font-family font-size line-height center pb-2">
+                <a class="button color-primary border-primary uppercase bold" href="{{content.tickets.url}}" target="_blank">
+                  {{content.tickets.title}}
+                </a>
+              </td>
+            </tr>
+          </table>
+          {{/if}}
+          {{#if content.soldout.title}}
+          <table border="0" class="container max-width" width="100%">
+            <tr>
+              <td class="tickets font-family font-size line-height center pb-2">
+                <a class="button color-primary border-primary uppercase bold">
+                  {{content.soldout.title}}
+                </a>
+              </td>
+            </tr>
+            <tr>
+              <td class="font-family color-text color-link font-size line-height center">
+                <i class="quote">
+                  <small class="quote">{{content.soldout.text}}</small>
+                </i>
+              </td>
+            </tr>
+          </table>
           {{/if}}
           <table border="0" class="container max-width" width="100%">
             <tr>
