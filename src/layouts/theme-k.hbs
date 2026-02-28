@@ -164,18 +164,6 @@
         {{/if}}
       </table>
     {{/if}}
-    {{#if content.paragraph}}
-      <table border="0" class="container max-width" width="100%">
-          <tr>
-            <td class="font-family font-size color-text color-link line-height pb-2">
-              <br>
-              <br>
-              {{{content.paragraph}}}
-              <br>
-            </td>
-          </tr>
-      </table>
-    {{/if}}
     {{#if content.facebook.url}}
       <table class="" width="100%">
         <tr>
@@ -192,6 +180,18 @@
             <br>
           </td>
         </tr>
+      </table>
+    {{/if}}
+    {{#if content.footnote}}
+      <table border="0" class="container max-width" width="100%">
+          <tr>
+            <td class="font-family color-text color-link line-height center pb-2">
+              <br>
+              <br>
+              {{{content.footnote}}}
+              <br>
+            </td>
+          </tr>
       </table>
     {{/if}}
     {{#if footer.imprint}}
