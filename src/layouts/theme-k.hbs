@@ -158,18 +158,35 @@
         {{#if content.poster.attribution}}
           <tr>
             <td class="poster font-family center py-2" valign="top">
-              <small>{{content.poster.attribution}}</small>
+              <small>{{content.poster.attribution}}</small>             
             </td>
           </tr>
         {{/if}}
+      </table>
+    {{/if}}
+    {{#if content.announcement.title}}
+      <table border="0" class="container max-width" width="100%">
+          <tr>
+            <td class="font-family color-text color-link line-height center pb-2">
+              <br>
+              <br>
+              <br>
+              <b>{{{content.announcement.title}}}</b>
+              <br>
+              <br>
+              {{{content.announcement.text}}}
+              <br>
+            </td>
+          </tr>
       </table>
     {{/if}}
     {{#if content.facebook.url}}
       <table class="" width="100%">
         <tr>
           <td class="facebook font-family font-size line-height center pb-7">
-            <br>
-            <br>
+            {{#unless content.announcement.title}}
+              <br>
+            {{/unless}}
             <span class="">{{content.facebook.superscript}}</span>
             <br>
             <a class="button border-link uppercase bold" href="{{content.facebook.url}}" target="_blank">
