@@ -161,6 +161,10 @@ hr, .hr {
     padding: $padding*2 $padding $padding $padding !important;
 }
 
+.pb-0 {
+    padding: $padding $padding 0 $padding !important;
+}
+
 .pb-1 {
     padding: $padding $padding $padding*1 $padding !important;
 }
@@ -185,6 +189,6 @@ hr, .hr {
     padding: $padding $padding $padding*6 $padding !important;
 }
 
-.pb-7 {
-    padding: $padding $padding $padding*7 $padding !important;
+.pb-10 {
+    padding: $padding*0 $padding $padding*12 $padding !important;
 }
