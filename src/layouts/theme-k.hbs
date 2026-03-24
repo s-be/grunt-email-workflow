@@ -75,7 +75,7 @@
               </td>
             </tr>
           </table>
-          {{#if content.tickets.url}}
+          {{#if content.tickets.title}}
           <table border="0" class="container max-width" width="100%">
             <tr>
               <td class="tickets font-family font-size line-height center pb-0">
@@ -86,19 +86,19 @@
             </tr>
           </table>
           {{/if}}
-          {{#if content.soldout.title}}
+          {{#if content.notickets.title}}
           <table border="0" class="container max-width" width="100%">
             <tr>
               <td class="tickets font-family font-size line-height center pb-0">
                 <a class="button color-primary border-primary uppercase bold">
-                  {{content.soldout.title}}
+                  {{content.notickets.title}}
                 </a>
               </td>
             </tr>
             <tr>
               <td class="font-family color-text color-link font-size line-height center">
                 <i class="quote">
-                  <small class="quote">{{content.soldout.text}}</small>
+                  <small class="quote">{{content.notickets.text}}</small>
                 </i>
               </td>
             </tr>
@@ -178,7 +178,7 @@
           </tr>
       </table>
     {{/if}}
-    {{#if content.facebook.url}}
+    {{#if content.facebook.title}}
       <table class="" width="100%">
         <tr>
           <td class="facebook font-family font-size center {{#if content.announcement.title}}p-facebook-alt{{else}}p-facebook{{/if}}">
