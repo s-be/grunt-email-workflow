@@ -201,6 +201,10 @@ hr, .hr {
     padding: $padding $padding $padding*8 $padding !important;
 }
 
+.p-body {
+    padding: $padding*2 $padding $padding*4 $padding !important;
+}
+
 .p-facebook-alt {
     padding: $padding*0 $padding*0 $padding*12 $padding*0 !important;
 }
