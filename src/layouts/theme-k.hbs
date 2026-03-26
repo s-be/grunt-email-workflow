@@ -21,7 +21,7 @@
                   <tr>
                     <td class="font-family p-logo" valign="middle" width="92">
                       <span class="logo">
-                        <img width="90" border="0" alt="Logo" src="{{content.logo}}">
+                        <img width="90" border="0" alt="Logo" src="{{default.logo}}">
                       </span>
                     </td>
                     <td class="tagline font-family p-tagline" align="right" valign="middle">
@@ -75,30 +75,30 @@
               </td>
             </tr>
           </table>
-          {{#if content.tickets.title}}
+          {{#if default.tickets.title}}
           <table border="0" class="container max-width" width="100%">
             <tr>
               <td class="tickets font-family font-size line-height center pb-0">
-                <a class="button color-primary border-primary uppercase bold" href="{{content.tickets.url}}" target="_blank">
-                  {{content.tickets.title}}
+                <a class="button color-primary border-primary uppercase bold" href="{{default.tickets.url}}" target="_blank">
+                  {{default.tickets.title}}
                 </a>
               </td>
             </tr>
           </table>
           {{/if}}
-          {{#if content.notickets.title}}
+          {{#if default.notickets.title}}
           <table border="0" class="container max-width" width="100%">
             <tr>
               <td class="tickets font-family font-size line-height center pb-0">
                 <a class="button color-primary border-primary uppercase bold">
-                  {{content.notickets.title}}
+                  {{default.notickets.title}}
                 </a>
               </td>
             </tr>
             <tr>
               <td class="font-family color-text color-link font-size line-height center">
                 <i class="quote">
-                  <small class="quote">{{content.notickets.text}}</small>
+                  <small class="quote">{{default.notickets.text}}</small>
                 </i>
               </td>
             </tr>
@@ -178,16 +178,16 @@
           </tr>
       </table>
     {{/if}}
-    {{#if content.facebook.title}}
+    {{#if default.facebook.title}}
       <table class="" width="100%">
         <tr>
           <td class="facebook font-family font-size center {{#if content.announcement.title}}p-facebook-alt{{else}}p-facebook{{/if}}">
             <br>
             <br>
-            <span class="">{{content.facebook.superscript}}</span>
+            <span class="">{{default.facebook.superscript}}</span>
             <br>
-            <a class="button border-link uppercase bold" href="{{content.facebook.url}}" target="_blank">
-              {{content.facebook.title}}
+            <a class="button border-link uppercase bold" href="{{default.facebook.url}}" target="_blank">
+              {{default.facebook.title}}
             </a>
             <br>
             <br>
